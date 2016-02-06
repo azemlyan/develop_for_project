@@ -1,0 +1,18 @@
+Log file created at: 2016/02/07 04:18:39
+Running on machine: andrew-Ideapad-Z570
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0207 04:18:39.527982 12744 data_loader.cc:111] DataLoader::InvokeIteration() - no batches found, please populate DataLoader data with some data
+W0207 04:18:39.529976 12747 merger.cc:313] SynchronizeModel() did not found any increments to topic model urn:uuid:b816283a-cd38-11e5-8744-74e50b3a6df6
+W0207 04:18:39.530575 12747 merger.cc:367] 5 of 5 topics have zero probability mass. Consider reducing values of ModelConfig.regularizer_tau (or ModelConfig.regularizer_settings.tau) for model 'urn:uuid:b816283a-cd38-11e5-8744-74e50b3a6df6', class_id=@default_class
+W0207 04:18:39.532933 12744 data_loader.cc:111] DataLoader::InvokeIteration() - no batches found, please populate DataLoader data with some data
+W0207 04:18:39.534037 12747 merger.cc:313] SynchronizeModel() did not found any increments to topic model urn:uuid:b816283a-cd38-11e5-8744-74e50b3a6df6
+W0207 04:18:39.534592 12747 merger.cc:367] 5 of 5 topics have zero probability mass. Consider reducing values of ModelConfig.regularizer_tau (or ModelConfig.regularizer_settings.tau) for model 'urn:uuid:b816283a-cd38-11e5-8744-74e50b3a6df6', class_id=@default_class
+W0207 04:18:39.535980 12744 data_loader.cc:111] DataLoader::InvokeIteration() - no batches found, please populate DataLoader data with some data
+W0207 04:18:39.537040 12747 merger.cc:313] SynchronizeModel() did not found any increments to topic model urn:uuid:b816283a-cd38-11e5-8744-74e50b3a6df6
+W0207 04:18:39.537587 12747 merger.cc:367] 5 of 5 topics have zero probability mass. Consider reducing values of ModelConfig.regularizer_tau (or ModelConfig.regularizer_settings.tau) for model 'urn:uuid:b816283a-cd38-11e5-8744-74e50b3a6df6', class_id=@default_class
+W0207 04:18:39.538853 12744 data_loader.cc:111] DataLoader::InvokeIteration() - no batches found, please populate DataLoader data with some data
+W0207 04:18:39.539974 12747 merger.cc:313] SynchronizeModel() did not found any increments to topic model urn:uuid:b816283a-cd38-11e5-8744-74e50b3a6df6
+W0207 04:18:39.540711 12747 merger.cc:367] 5 of 5 topics have zero probability mass. Consider reducing values of ModelConfig.regularizer_tau (or ModelConfig.regularizer_settings.tau) for model 'urn:uuid:b816283a-cd38-11e5-8744-74e50b3a6df6', class_id=@default_class
+W0207 04:18:39.543226 12744 data_loader.cc:111] DataLoader::InvokeIteration() - no batches found, please populate DataLoader data with some data
+W0207 04:18:39.544296 12747 merger.cc:313] SynchronizeModel() did not found any increments to topic model urn:uuid:b816283a-cd38-11e5-8744-74e50b3a6df6
+W0207 04:18:39.545583 12747 merger.cc:367] 5 of 5 topics have zero probability mass. Consider reducing values of ModelConfig.regularizer_tau (or ModelConfig.regularizer_settings.tau) for model 'urn:uuid:b816283a-cd38-11e5-8744-74e50b3a6df6', class_id=@default_class

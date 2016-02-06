@@ -1,0 +1,116 @@
+Log file created at: 2016/02/07 04:50:49
+Running on machine: andrew-Ideapad-Z570
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0207 04:50:49.472010 13630 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:50:49.472312 13635 processor.cc:958] Processor thread started
+I0207 04:50:49.472327 13634 processor.cc:958] Processor thread started
+I0207 04:50:49.472339 13630 c_interface.cc:237] Creating MasterComponent (id=1)...
+I0207 04:50:49.472344 13633 merger.cc:124] Merger thread started
+I0207 04:50:49.472393 13637 processor.cc:958] Processor thread started
+I0207 04:50:49.472658 13630 master_component.cc:89] Dictionary import completed
+I0207 04:50:49.472332 13636 processor.cc:958] Processor thread started
+I0207 04:50:49.475929 13630 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:50:49.475986 13630 master_component.cc:236] MasterComponent::Reconfigure() with MasterComponentConfig: disk_path=, stream_size=0, compact_batches=yes, cache_theta=no, processors_count=4, processor_queue_max_size=4, merger_queue_max_size=10, score_config_size=1, disk_cache_path
+I0207 04:50:49.476014 13630 perplexity.cc:25] Perplexity score calculator created: stream_name=@global, model_type=0
+I0207 04:50:49.481755 13630 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:50:49.481813 13630 master_component.cc:236] MasterComponent::Reconfigure() with MasterComponentConfig: disk_path=, stream_size=0, compact_batches=yes, cache_theta=no, processors_count=4, processor_queue_max_size=4, merger_queue_max_size=10, score_config_size=2, disk_cache_path
+I0207 04:50:49.481858 13630 perplexity.cc:25] Perplexity score calculator created: stream_name=@global, model_type=0
+I0207 04:50:49.487787 13630 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:50:49.487844 13630 master_component.cc:236] MasterComponent::Reconfigure() with MasterComponentConfig: disk_path=, stream_size=0, compact_batches=yes, cache_theta=no, processors_count=4, processor_queue_max_size=4, merger_queue_max_size=10, score_config_size=3, disk_cache_path
+I0207 04:50:49.487887 13630 perplexity.cc:25] Perplexity score calculator created: stream_name=@global, model_type=0
+I0207 04:50:49.494516 13637 processor.cc:974] No data in processing queue, waiting...
+I0207 04:50:49.494484 13635 processor.cc:974] No data in processing queue, waiting...
+I0207 04:50:49.494642 13636 processor.cc:974] No data in processing queue, waiting...
+I0207 04:50:49.494484 13634 processor.cc:974] No data in processing queue, waiting...
+I0207 04:50:49.494930 13630 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:50:49.494993 13630 master_component.cc:236] MasterComponent::Reconfigure() with MasterComponentConfig: disk_path=, stream_size=0, compact_batches=yes, cache_theta=no, processors_count=4, processor_queue_max_size=4, merger_queue_max_size=10, score_config_size=4, disk_cache_path
+I0207 04:50:49.495086 13630 perplexity.cc:25] Perplexity score calculator created: stream_name=@global, model_type=0
+I0207 04:50:49.502770 13630 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:50:49.502876 13630 master_component.cc:236] MasterComponent::Reconfigure() with MasterComponentConfig: disk_path=, stream_size=0, compact_batches=yes, cache_theta=no, processors_count=4, processor_queue_max_size=4, merger_queue_max_size=10, score_config_size=5, disk_cache_path
+I0207 04:50:49.502961 13630 perplexity.cc:25] Perplexity score calculator created: stream_name=@global, model_type=0
+I0207 04:50:49.503777 13630 instance.cc:226] Regularizer 'SmoothSparseThetaRegularizer:urn:uuid:36756e3a-cd3d-11e5-b4ed-74e50b3a6df6' will be created
+I0207 04:50:49.503830 13630 instance.cc:238] Regularizer 'SmoothSparseThetaRegularizer:urn:uuid:36756e3a-cd3d-11e5-b4ed-74e50b3a6df6' was cold-reconfigured
+I0207 04:50:49.504279 13630 instance.cc:226] Regularizer 'SmoothSparsePhiRegularizer:urn:uuid:36758776-cd3d-11e5-b4ed-74e50b3a6df6' will be created
+I0207 04:50:49.504521 13630 instance.cc:244] Regularizer 'SmoothSparsePhiRegularizer:urn:uuid:36758776-cd3d-11e5-b4ed-74e50b3a6df6' was cold-reconfigured
+I0207 04:50:49.504992 13630 instance.cc:226] Regularizer 'DecorrelatorPhiRegularizer:urn:uuid:3675a40e-cd3d-11e5-b4ed-74e50b3a6df6' will be created
+I0207 04:50:49.505048 13630 instance.cc:256] Regularizer 'DecorrelatorPhiRegularizer:urn:uuid:3675a40e-cd3d-11e5-b4ed-74e50b3a6df6' was cold-reconfigured
+I0207 04:50:49.505578 13630 master_component.cc:58] MasterComponent::CreateOrReconfigureModel() with ModelConfig: name=urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6, topics_count=5, topic_name_size=5, enabled=yes, inner_iterations_count=5, field_name=@body, stream_name=@global, reuse_theta=no, use_sparse_bow=yes, use_random_theta=no, use_new_tokens=yes
+I0207 04:50:49.506134 13630 master_component.cc:58] MasterComponent::CreateOrReconfigureModel() with ModelConfig: name=urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6, topics_count=5, topic_name_size=5, enabled=yes, inner_iterations_count=5, field_name=@body, stream_name=@global, reuse_theta=no, use_sparse_bow=yes, use_random_theta=no, use_new_tokens=yes
+I0207 04:50:49.506578 13630 master_component.cc:58] MasterComponent::CreateOrReconfigureModel() with ModelConfig: name=urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6, topics_count=5, topic_name_size=5, enabled=yes, inner_iterations_count=5, field_name=@body, stream_name=@global, reuse_theta=no, use_sparse_bow=yes, use_random_theta=no, use_new_tokens=yes
+I0207 04:50:49.507068 13630 master_component.cc:58] MasterComponent::CreateOrReconfigureModel() with ModelConfig: name=urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6, topics_count=5, topic_name_size=5, enabled=yes, inner_iterations_count=5, field_name=@body, stream_name=@global, reuse_theta=no, use_sparse_bow=yes, use_random_theta=no, use_new_tokens=yes
+I0207 04:50:49.507506 13630 master_component.cc:231] MasterComponent::InitializeModel() with InitializeModelArgs: model_name=urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6, source_type=0, dictionary_name=dictionary, filter_size=0, topic_name_size=0
+I0207 04:50:49.507560 13630 merger.cc:411] InitializeModel() with 5 topics and 75 tokens
+I0207 04:50:49.510233 13633 merger.cc:193] Merger::ResetScores()
+W0207 04:50:49.510535 13630 data_loader.cc:111] DataLoader::InvokeIteration() - no batches found, please populate DataLoader data with some data
+W0207 04:50:49.512600 13633 merger.cc:313] SynchronizeModel() did not found any increments to topic model urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6
+I0207 04:50:49.512796 13633 phi_matrix_operations.cc:96] RetrieveExternalTopicModel() with 5 topics, 75 tokens
+W0207 04:50:49.513344 13633 merger.cc:367] 5 of 5 topics have zero probability mass. Consider reducing values of ModelConfig.regularizer_tau (or ModelConfig.regularizer_settings.tau) for model 'urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6', class_id=@default_class
+I0207 04:50:49.513465 13633 common.h:117] 0ms in Merger::SynchronizeModel (urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6, decay_weight=0, apply_weight=1, invoke_regularizers=true)
+I0207 04:50:49.513903 13630 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore:urn:uuid:36712a50-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.514097 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 67 bytes
+I0207 04:50:49.514502 13630 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore:urn:uuid:3672f6dc-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.514675 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 83 bytes
+I0207 04:50:49.515013 13630 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore:urn:uuid:36720d08-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.515133 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 70 bytes
+I0207 04:50:49.515630 13633 merger.cc:193] Merger::ResetScores()
+W0207 04:50:49.515833 13630 data_loader.cc:111] DataLoader::InvokeIteration() - no batches found, please populate DataLoader data with some data
+W0207 04:50:49.516811 13633 merger.cc:313] SynchronizeModel() did not found any increments to topic model urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6
+I0207 04:50:49.516978 13633 phi_matrix_operations.cc:96] RetrieveExternalTopicModel() with 5 topics, 75 tokens
+W0207 04:50:49.518303 13633 merger.cc:367] 5 of 5 topics have zero probability mass. Consider reducing values of ModelConfig.regularizer_tau (or ModelConfig.regularizer_settings.tau) for model 'urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6', class_id=@default_class
+I0207 04:50:49.518659 13633 common.h:117] 1ms in Merger::SynchronizeModel (urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6, decay_weight=0, apply_weight=1, invoke_regularizers=true) [including 1ms in InvokePhiRegularizers, ; ]
+I0207 04:50:49.518980 13630 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore:urn:uuid:36712a50-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.519070 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 67 bytes
+I0207 04:50:49.519306 13630 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore:urn:uuid:3672f6dc-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.519381 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 83 bytes
+I0207 04:50:49.519613 13630 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore:urn:uuid:36720d08-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.519671 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 70 bytes
+I0207 04:50:49.520927 13633 merger.cc:193] Merger::ResetScores()
+W0207 04:50:49.521051 13630 data_loader.cc:111] DataLoader::InvokeIteration() - no batches found, please populate DataLoader data with some data
+W0207 04:50:49.522177 13633 merger.cc:313] SynchronizeModel() did not found any increments to topic model urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6
+I0207 04:50:49.523808 13633 phi_matrix_operations.cc:96] RetrieveExternalTopicModel() with 5 topics, 75 tokens
+W0207 04:50:49.524610 13633 merger.cc:367] 5 of 5 topics have zero probability mass. Consider reducing values of ModelConfig.regularizer_tau (or ModelConfig.regularizer_settings.tau) for model 'urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6', class_id=@default_class
+I0207 04:50:49.524904 13633 common.h:117] 2ms in Merger::SynchronizeModel (urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6, decay_weight=0, apply_weight=1, invoke_regularizers=true)
+I0207 04:50:49.526338 13630 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore:urn:uuid:36712a50-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.526466 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 67 bytes
+I0207 04:50:49.527130 13630 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore:urn:uuid:3672f6dc-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.527308 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 83 bytes
+I0207 04:50:49.527875 13630 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore:urn:uuid:36720d08-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.528024 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 70 bytes
+I0207 04:50:49.529341 13633 merger.cc:193] Merger::ResetScores()
+W0207 04:50:49.529489 13630 data_loader.cc:111] DataLoader::InvokeIteration() - no batches found, please populate DataLoader data with some data
+W0207 04:50:49.530583 13633 merger.cc:313] SynchronizeModel() did not found any increments to topic model urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6
+I0207 04:50:49.530741 13633 phi_matrix_operations.cc:96] RetrieveExternalTopicModel() with 5 topics, 75 tokens
+W0207 04:50:49.532143 13633 merger.cc:367] 5 of 5 topics have zero probability mass. Consider reducing values of ModelConfig.regularizer_tau (or ModelConfig.regularizer_settings.tau) for model 'urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6', class_id=@default_class
+I0207 04:50:49.532459 13633 common.h:117] 1ms in Merger::SynchronizeModel (urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6, decay_weight=0, apply_weight=1, invoke_regularizers=true) [including 1ms in InvokePhiRegularizers, ; ]
+I0207 04:50:49.532999 13630 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore:urn:uuid:36712a50-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.533202 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 67 bytes
+I0207 04:50:49.533603 13630 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore:urn:uuid:3672f6dc-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.533758 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 83 bytes
+I0207 04:50:49.534178 13630 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore:urn:uuid:36720d08-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.534320 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 70 bytes
+I0207 04:50:49.535998 13633 merger.cc:193] Merger::ResetScores()
+W0207 04:50:49.536535 13630 data_loader.cc:111] DataLoader::InvokeIteration() - no batches found, please populate DataLoader data with some data
+W0207 04:50:49.537590 13633 merger.cc:313] SynchronizeModel() did not found any increments to topic model urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6
+I0207 04:50:49.537664 13633 phi_matrix_operations.cc:96] RetrieveExternalTopicModel() with 5 topics, 75 tokens
+W0207 04:50:49.538069 13633 merger.cc:367] 5 of 5 topics have zero probability mass. Consider reducing values of ModelConfig.regularizer_tau (or ModelConfig.regularizer_settings.tau) for model 'urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6', class_id=@default_class
+I0207 04:50:49.538431 13633 common.h:117] 0ms in Merger::SynchronizeModel (urn:uuid:3675b94e-cd3d-11e5-b4ed-74e50b3a6df6, decay_weight=0, apply_weight=1, invoke_regularizers=true)
+I0207 04:50:49.538763 13630 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore:urn:uuid:36712a50-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.538827 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 67 bytes
+I0207 04:50:49.539037 13630 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore:urn:uuid:3672f6dc-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.539119 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 83 bytes
+I0207 04:50:49.539324 13630 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore:urn:uuid:36720d08-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.539388 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 70 bytes
+I0207 04:50:49.539659 13630 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore:urn:uuid:3673eef2-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.539942 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 1336 bytes
+I0207 04:50:49.541746 13630 merger.cc:246] Merger::RequestScore(score_name=ThetaSnippetScore:urn:uuid:36751dae-cd3d-11e5-b4ed-74e50b3a6df6)
+I0207 04:50:49.541832 13630 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 69 bytes
+I0207 04:50:49.542914 13634 processor.cc:966] Processor thread stopped
+I0207 04:50:49.542945 13634 processor.cc:967] Total number of processed batches: 0
+I0207 04:50:49.543306 13635 processor.cc:966] Processor thread stopped
+I0207 04:50:49.543337 13635 processor.cc:967] Total number of processed batches: 0
+I0207 04:50:49.544782 13636 processor.cc:966] Processor thread stopped
+I0207 04:50:49.544802 13636 processor.cc:967] Total number of processed batches: 0
+I0207 04:50:49.545675 13637 processor.cc:966] Processor thread stopped
+I0207 04:50:49.545696 13637 processor.cc:967] Total number of processed batches: 0
+I0207 04:50:49.545929 13633 merger.cc:127] Merger thread stopped
+I0207 04:50:49.546149 13630 c_interface.cc:529] Disposing MasterComponent (id=1)...

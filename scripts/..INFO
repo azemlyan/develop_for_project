@@ -1,0 +1,238 @@
+Log file created at: 2016/02/07 04:51:29
+Running on machine: andrew-Ideapad-Z570
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0207 04:51:29.338388 13685 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:51:29.338800 13689 processor.cc:958] Processor thread started
+I0207 04:51:29.338804 13685 c_interface.cc:237] Creating MasterComponent (id=1)...
+I0207 04:51:29.338814 13690 processor.cc:958] Processor thread started
+I0207 04:51:29.338814 13688 merger.cc:124] Merger thread started
+I0207 04:51:29.338873 13691 processor.cc:958] Processor thread started
+I0207 04:51:29.338909 13692 processor.cc:958] Processor thread started
+I0207 04:51:29.339076 13685 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:51:29.339095 13685 master_component.cc:236] MasterComponent::Reconfigure() with MasterComponentConfig: disk_path=, stream_size=0, compact_batches=yes, cache_theta=yes, processors_count=4, processor_queue_max_size=4, merger_queue_max_size=10, score_config_size=1, disk_cache_path
+I0207 04:51:29.339117 13685 perplexity.cc:25] Perplexity score calculator created: stream_name=@global, model_type=1, dictionary_name=dictionary
+I0207 04:51:29.339402 13685 master_component.cc:89] Dictionary import completed
+I0207 04:51:29.339550 13685 master_component.cc:231] MasterComponent::InitializeModel() with InitializeModelArgs: model_name=pwt, source_type=0, dictionary_name=dictionary, filter_size=0, topics_count=3, topic_name_size=3
+I0207 04:51:29.339567 13685 merger.cc:411] InitializeModel() with 3 topics and 75 tokens
+I0207 04:51:29.339942 13685 phi_matrix_operations.cc:96] RetrieveExternalTopicModel() with 3 topics, 75 tokens
+I0207 04:51:29.340091 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 3160 bytes
+I0207 04:51:29.343422 13685 master_component.cc:89] Dictionary import completed
+I0207 04:51:29.343608 13685 master_component.cc:231] MasterComponent::InitializeModel() with InitializeModelArgs: model_name=pwt, source_type=0, dictionary_name=dictionary, filter_size=0, topics_count=3, topic_name_size=3
+I0207 04:51:29.343623 13685 merger.cc:411] InitializeModel() with 3 topics and 75 tokens
+I0207 04:51:29.343992 13685 phi_matrix_operations.cc:96] RetrieveExternalTopicModel() with 3 topics, 75 tokens
+I0207 04:51:29.344060 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 3160 bytes
+I0207 04:51:29.346220 13685 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:51:29.346242 13685 master_component.cc:236] MasterComponent::Reconfigure() with MasterComponentConfig: disk_path=, stream_size=0, compact_batches=yes, cache_theta=yes, processors_count=4, processor_queue_max_size=4, merger_queue_max_size=10, score_config_size=2, disk_cache_path
+I0207 04:51:29.346266 13685 perplexity.cc:25] Perplexity score calculator created: stream_name=@global, model_type=1, dictionary_name=dictionary
+I0207 04:51:29.346473 13685 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:51:29.346489 13685 master_component.cc:236] MasterComponent::Reconfigure() with MasterComponentConfig: disk_path=, stream_size=0, compact_batches=yes, cache_theta=yes, processors_count=4, processor_queue_max_size=4, merger_queue_max_size=10, score_config_size=3, disk_cache_path
+I0207 04:51:29.346504 13685 perplexity.cc:25] Perplexity score calculator created: stream_name=@global, model_type=1, dictionary_name=dictionary
+I0207 04:51:29.346726 13685 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:51:29.346741 13685 master_component.cc:236] MasterComponent::Reconfigure() with MasterComponentConfig: disk_path=, stream_size=0, compact_batches=yes, cache_theta=yes, processors_count=4, processor_queue_max_size=4, merger_queue_max_size=10, score_config_size=4, disk_cache_path
+I0207 04:51:29.346756 13685 perplexity.cc:25] Perplexity score calculator created: stream_name=@global, model_type=1, dictionary_name=dictionary
+I0207 04:51:29.347002 13685 helpers.cc:491] MasterComponentConfig.processors_count is automatically set to 4
+I0207 04:51:29.347105 13685 master_component.cc:236] MasterComponent::Reconfigure() with MasterComponentConfig: disk_path=, stream_size=0, compact_batches=yes, cache_theta=yes, processors_count=4, processor_queue_max_size=4, merger_queue_max_size=10, score_config_size=5, disk_cache_path
+I0207 04:51:29.347128 13685 perplexity.cc:25] Perplexity score calculator created: stream_name=@global, model_type=1, dictionary_name=dictionary
+I0207 04:51:29.347339 13685 master_component.cc:286] MasterComponent::RequestProcessBatches() with ProcessBatchesArgs: nwt_target_name=nwt, batch_filename_size=2, batch_weight_size=2, pwt_source_name=pwt, inner_iterations_count=20, stream_name=@global, reuse_theta=yes, opt_for_avx=yes, use_sparse_bow=yes, reset_scores=yes, predict_class_id=
+I0207 04:51:29.347431 13685 master_component.cc:360] Batches count (=2) is smaller than processors threads count (=4), which may cause suboptimal performance.
+I0207 04:51:29.348911 13689 common.h:117] 0ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/fb2b33a1-4563-42b6-92b9-5605c9b99ae5.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.349236 13689 common.h:117] 0ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/d3360a62-00f8-4828-a8c6-7f92c358e866.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.349601 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 104 bytes
+I0207 04:51:29.349795 13685 master_component.cc:467] MasterComponent::RegularizeModel() with RegularizeModelArgs: rwt_target_name=rwt, pwt_source_name=pwt, nwt_source_name=nwt
+I0207 04:51:29.349988 13685 master_component.cc:499] MasterComponent::NormalizeModel() with NormalizeModelArgs: pwt_target_name=pwt, nwt_source_name=nwt, rwt_source_name=rwt
+I0207 04:51:29.350168 13685 merger.cc:246] Merger::RequestScore(score_name=TopicKernelScore)
+I0207 04:51:29.350303 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 1783 bytes
+I0207 04:51:29.352633 13685 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore)
+I0207 04:51:29.352694 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 63 bytes
+I0207 04:51:29.352931 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore)
+I0207 04:51:29.353018 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 36 bytes
+I0207 04:51:29.353200 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore)
+I0207 04:51:29.353266 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.353435 13685 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore)
+I0207 04:51:29.353564 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 743 bytes
+I0207 04:51:29.355787 13685 master_component.cc:286] MasterComponent::RequestProcessBatches() with ProcessBatchesArgs: nwt_target_name=nwt, batch_filename_size=2, batch_weight_size=2, pwt_source_name=pwt, inner_iterations_count=20, stream_name=@global, reuse_theta=yes, opt_for_avx=yes, use_sparse_bow=yes, reset_scores=yes, predict_class_id=
+I0207 04:51:29.357137 13689 common.h:117] 0ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/fb2b33a1-4563-42b6-92b9-5605c9b99ae5.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.359025 13691 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.359040 13690 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.359380 13692 common.h:117] 1ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/d3360a62-00f8-4828-a8c6-7f92c358e866.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.359458 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 104 bytes
+I0207 04:51:29.359694 13685 master_component.cc:467] MasterComponent::RegularizeModel() with RegularizeModelArgs: rwt_target_name=rwt, pwt_source_name=pwt, nwt_source_name=nwt
+I0207 04:51:29.359961 13685 master_component.cc:499] MasterComponent::NormalizeModel() with NormalizeModelArgs: pwt_target_name=pwt, nwt_source_name=nwt, rwt_source_name=rwt
+I0207 04:51:29.360148 13685 merger.cc:246] Merger::RequestScore(score_name=TopicKernelScore)
+I0207 04:51:29.360297 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 1215 bytes
+I0207 04:51:29.362932 13685 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore)
+I0207 04:51:29.363016 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 63 bytes
+I0207 04:51:29.363207 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore)
+I0207 04:51:29.363278 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 36 bytes
+I0207 04:51:29.363454 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore)
+I0207 04:51:29.363518 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.363693 13685 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore)
+I0207 04:51:29.363816 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 741 bytes
+I0207 04:51:29.366019 13685 master_component.cc:286] MasterComponent::RequestProcessBatches() with ProcessBatchesArgs: nwt_target_name=nwt, batch_filename_size=2, batch_weight_size=2, pwt_source_name=pwt, inner_iterations_count=20, stream_name=@global, reuse_theta=yes, opt_for_avx=yes, use_sparse_bow=yes, reset_scores=yes, predict_class_id=
+I0207 04:51:29.367327 13692 common.h:117] 0ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/fb2b33a1-4563-42b6-92b9-5605c9b99ae5.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.367657 13691 processor.cc:981] Processing queue has data, processing started
+I0207 04:51:29.368948 13691 common.h:117] 1ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/d3360a62-00f8-4828-a8c6-7f92c358e866.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.369745 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 104 bytes
+I0207 04:51:29.369990 13685 master_component.cc:467] MasterComponent::RegularizeModel() with RegularizeModelArgs: rwt_target_name=rwt, pwt_source_name=pwt, nwt_source_name=nwt
+I0207 04:51:29.370252 13685 master_component.cc:499] MasterComponent::NormalizeModel() with NormalizeModelArgs: pwt_target_name=pwt, nwt_source_name=nwt, rwt_source_name=rwt
+I0207 04:51:29.370467 13685 merger.cc:246] Merger::RequestScore(score_name=TopicKernelScore)
+I0207 04:51:29.370609 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 1056 bytes
+I0207 04:51:29.372974 13685 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore)
+I0207 04:51:29.373024 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 63 bytes
+I0207 04:51:29.373183 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore)
+I0207 04:51:29.373224 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 36 bytes
+I0207 04:51:29.373373 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore)
+I0207 04:51:29.373406 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.373594 13685 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore)
+I0207 04:51:29.373746 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 752 bytes
+I0207 04:51:29.375849 13685 master_component.cc:286] MasterComponent::RequestProcessBatches() with ProcessBatchesArgs: nwt_target_name=nwt, batch_filename_size=2, batch_weight_size=2, pwt_source_name=pwt, inner_iterations_count=20, stream_name=@global, reuse_theta=yes, opt_for_avx=yes, use_sparse_bow=yes, reset_scores=yes, predict_class_id=
+I0207 04:51:29.377329 13689 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.377490 13692 common.h:117] 0ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/fb2b33a1-4563-42b6-92b9-5605c9b99ae5.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.378672 13691 common.h:117] 1ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/d3360a62-00f8-4828-a8c6-7f92c358e866.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.379667 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 104 bytes
+I0207 04:51:29.379937 13685 master_component.cc:467] MasterComponent::RegularizeModel() with RegularizeModelArgs: rwt_target_name=rwt, pwt_source_name=pwt, nwt_source_name=nwt
+I0207 04:51:29.380231 13685 master_component.cc:499] MasterComponent::NormalizeModel() with NormalizeModelArgs: pwt_target_name=pwt, nwt_source_name=nwt, rwt_source_name=rwt
+I0207 04:51:29.380456 13685 merger.cc:246] Merger::RequestScore(score_name=TopicKernelScore)
+I0207 04:51:29.380609 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 872 bytes
+I0207 04:51:29.383430 13685 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore)
+I0207 04:51:29.383492 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 63 bytes
+I0207 04:51:29.383689 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore)
+I0207 04:51:29.383747 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 36 bytes
+I0207 04:51:29.383915 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore)
+I0207 04:51:29.383956 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.384109 13685 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore)
+I0207 04:51:29.384268 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 749 bytes
+I0207 04:51:29.386971 13685 master_component.cc:286] MasterComponent::RequestProcessBatches() with ProcessBatchesArgs: nwt_target_name=nwt, batch_filename_size=2, batch_weight_size=2, pwt_source_name=pwt, inner_iterations_count=20, stream_name=@global, reuse_theta=yes, opt_for_avx=yes, use_sparse_bow=yes, reset_scores=yes, predict_class_id=
+I0207 04:51:29.387970 13689 processor.cc:981] Processing queue has data, processing started
+I0207 04:51:29.388519 13689 common.h:117] 0ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/fb2b33a1-4563-42b6-92b9-5605c9b99ae5.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.389003 13690 processor.cc:981] Processing queue has data, processing started
+I0207 04:51:29.390301 13690 common.h:117] 1ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/d3360a62-00f8-4828-a8c6-7f92c358e866.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.391023 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 104 bytes
+I0207 04:51:29.391425 13685 master_component.cc:467] MasterComponent::RegularizeModel() with RegularizeModelArgs: rwt_target_name=rwt, pwt_source_name=pwt, nwt_source_name=nwt
+I0207 04:51:29.391762 13685 master_component.cc:499] MasterComponent::NormalizeModel() with NormalizeModelArgs: pwt_target_name=pwt, nwt_source_name=nwt, rwt_source_name=rwt
+I0207 04:51:29.392025 13685 merger.cc:246] Merger::RequestScore(score_name=TopicKernelScore)
+I0207 04:51:29.392163 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 872 bytes
+I0207 04:51:29.395010 13685 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore)
+I0207 04:51:29.395110 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 63 bytes
+I0207 04:51:29.395308 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore)
+I0207 04:51:29.395401 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.395604 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore)
+I0207 04:51:29.395647 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.395858 13685 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore)
+I0207 04:51:29.396009 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 749 bytes
+I0207 04:51:29.397711 13692 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.398567 13685 master_component.cc:286] MasterComponent::RequestProcessBatches() with ProcessBatchesArgs: nwt_target_name=nwt, batch_filename_size=2, batch_weight_size=2, pwt_source_name=pwt, inner_iterations_count=20, stream_name=@global, reuse_theta=yes, opt_for_avx=yes, use_sparse_bow=yes, reset_scores=yes, predict_class_id=
+I0207 04:51:29.398826 13691 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.399883 13692 processor.cc:981] Processing queue has data, processing started
+I0207 04:51:29.400563 13692 common.h:117] 0ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/fb2b33a1-4563-42b6-92b9-5605c9b99ae5.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.401798 13692 common.h:117] 1ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/d3360a62-00f8-4828-a8c6-7f92c358e866.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.402606 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 104 bytes
+I0207 04:51:29.402881 13685 master_component.cc:467] MasterComponent::RegularizeModel() with RegularizeModelArgs: rwt_target_name=rwt, pwt_source_name=pwt, nwt_source_name=nwt
+I0207 04:51:29.403177 13685 master_component.cc:499] MasterComponent::NormalizeModel() with NormalizeModelArgs: pwt_target_name=pwt, nwt_source_name=nwt, rwt_source_name=rwt
+I0207 04:51:29.403415 13685 merger.cc:246] Merger::RequestScore(score_name=TopicKernelScore)
+I0207 04:51:29.403517 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 872 bytes
+I0207 04:51:29.406347 13685 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore)
+I0207 04:51:29.406415 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 63 bytes
+I0207 04:51:29.406615 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore)
+I0207 04:51:29.406667 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.406832 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore)
+I0207 04:51:29.406872 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.407028 13685 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore)
+I0207 04:51:29.407141 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 749 bytes
+I0207 04:51:29.408704 13689 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.409780 13685 master_component.cc:286] MasterComponent::RequestProcessBatches() with ProcessBatchesArgs: nwt_target_name=nwt, batch_filename_size=2, batch_weight_size=2, pwt_source_name=pwt, inner_iterations_count=20, stream_name=@global, reuse_theta=yes, opt_for_avx=yes, use_sparse_bow=yes, reset_scores=yes, predict_class_id=
+I0207 04:51:29.410663 13690 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.410886 13689 processor.cc:981] Processing queue has data, processing started
+I0207 04:51:29.411412 13689 common.h:117] 0ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/fb2b33a1-4563-42b6-92b9-5605c9b99ae5.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.411600 13691 processor.cc:981] Processing queue has data, processing started
+I0207 04:51:29.412746 13691 common.h:117] 1ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/d3360a62-00f8-4828-a8c6-7f92c358e866.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.413755 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 104 bytes
+I0207 04:51:29.414016 13685 master_component.cc:467] MasterComponent::RegularizeModel() with RegularizeModelArgs: rwt_target_name=rwt, pwt_source_name=pwt, nwt_source_name=nwt
+I0207 04:51:29.414321 13685 master_component.cc:499] MasterComponent::NormalizeModel() with NormalizeModelArgs: pwt_target_name=pwt, nwt_source_name=nwt, rwt_source_name=rwt
+I0207 04:51:29.414541 13685 merger.cc:246] Merger::RequestScore(score_name=TopicKernelScore)
+I0207 04:51:29.414649 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 872 bytes
+I0207 04:51:29.417721 13685 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore)
+I0207 04:51:29.417845 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 63 bytes
+I0207 04:51:29.418082 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore)
+I0207 04:51:29.418174 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.418393 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore)
+I0207 04:51:29.418437 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.418627 13685 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore)
+I0207 04:51:29.418774 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 749 bytes
+I0207 04:51:29.421406 13685 master_component.cc:286] MasterComponent::RequestProcessBatches() with ProcessBatchesArgs: nwt_target_name=nwt, batch_filename_size=2, batch_weight_size=2, pwt_source_name=pwt, inner_iterations_count=20, stream_name=@global, reuse_theta=yes, opt_for_avx=yes, use_sparse_bow=yes, reset_scores=yes, predict_class_id=
+I0207 04:51:29.422055 13692 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.422432 13690 processor.cc:981] Processing queue has data, processing started
+I0207 04:51:29.423198 13690 common.h:117] 0ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/fb2b33a1-4563-42b6-92b9-5605c9b99ae5.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.425405 13689 common.h:117] 1ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/d3360a62-00f8-4828-a8c6-7f92c358e866.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.425793 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 104 bytes
+I0207 04:51:29.426127 13685 master_component.cc:467] MasterComponent::RegularizeModel() with RegularizeModelArgs: rwt_target_name=rwt, pwt_source_name=pwt, nwt_source_name=nwt
+I0207 04:51:29.426426 13685 master_component.cc:499] MasterComponent::NormalizeModel() with NormalizeModelArgs: pwt_target_name=pwt, nwt_source_name=nwt, rwt_source_name=rwt
+I0207 04:51:29.426681 13685 merger.cc:246] Merger::RequestScore(score_name=TopicKernelScore)
+I0207 04:51:29.426826 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 872 bytes
+I0207 04:51:29.429632 13685 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore)
+I0207 04:51:29.429702 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 63 bytes
+I0207 04:51:29.429894 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore)
+I0207 04:51:29.429947 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.430110 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore)
+I0207 04:51:29.430150 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.430301 13685 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore)
+I0207 04:51:29.430411 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 749 bytes
+I0207 04:51:29.432971 13691 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.433163 13685 master_component.cc:286] MasterComponent::RequestProcessBatches() with ProcessBatchesArgs: nwt_target_name=nwt, batch_filename_size=2, batch_weight_size=2, pwt_source_name=pwt, inner_iterations_count=20, stream_name=@global, reuse_theta=yes, opt_for_avx=yes, use_sparse_bow=yes, reset_scores=yes, predict_class_id=
+I0207 04:51:29.434855 13692 processor.cc:981] Processing queue has data, processing started
+I0207 04:51:29.436131 13692 common.h:117] 1ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/fb2b33a1-4563-42b6-92b9-5605c9b99ae5.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.436189 13690 common.h:117] 1ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/d3360a62-00f8-4828-a8c6-7f92c358e866.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.437050 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 104 bytes
+I0207 04:51:29.437314 13685 master_component.cc:467] MasterComponent::RegularizeModel() with RegularizeModelArgs: rwt_target_name=rwt, pwt_source_name=pwt, nwt_source_name=nwt
+I0207 04:51:29.437633 13685 master_component.cc:499] MasterComponent::NormalizeModel() with NormalizeModelArgs: pwt_target_name=pwt, nwt_source_name=nwt, rwt_source_name=rwt
+I0207 04:51:29.437892 13685 merger.cc:246] Merger::RequestScore(score_name=TopicKernelScore)
+I0207 04:51:29.437997 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 872 bytes
+I0207 04:51:29.440801 13685 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore)
+I0207 04:51:29.440860 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 63 bytes
+I0207 04:51:29.441056 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore)
+I0207 04:51:29.441107 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.441274 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore)
+I0207 04:51:29.441314 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.441469 13685 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore)
+I0207 04:51:29.441673 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 749 bytes
+I0207 04:51:29.444313 13685 master_component.cc:286] MasterComponent::RequestProcessBatches() with ProcessBatchesArgs: nwt_target_name=nwt, batch_filename_size=2, batch_weight_size=2, pwt_source_name=pwt, inner_iterations_count=20, stream_name=@global, reuse_theta=yes, opt_for_avx=yes, use_sparse_bow=yes, reset_scores=yes, predict_class_id=
+I0207 04:51:29.445744 13691 processor.cc:981] Processing queue has data, processing started
+I0207 04:51:29.445787 13689 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.446607 13691 common.h:117] 0ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/fb2b33a1-4563-42b6-92b9-5605c9b99ae5.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.447754 13691 common.h:117] 1ms in ProcessBatch(/home/andrew/develop_for_diplom/batch/d3360a62-00f8-4828-a8c6-7f92c358e866.batch) [including 0ms in LoadMessage; 0ms in InitializeSparseNdw; 0ms in InitializeModelIncrement; 0ms in InferThetaAndUpdateNwtSparse; 0ms in CalculateScore(PerplexityScore); 0ms in CalculateScore(SparsityThetaScore); ]
+I0207 04:51:29.448299 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 104 bytes
+I0207 04:51:29.448572 13685 master_component.cc:467] MasterComponent::RegularizeModel() with RegularizeModelArgs: rwt_target_name=rwt, pwt_source_name=pwt, nwt_source_name=nwt
+I0207 04:51:29.448899 13685 master_component.cc:499] MasterComponent::NormalizeModel() with NormalizeModelArgs: pwt_target_name=pwt, nwt_source_name=nwt, rwt_source_name=rwt
+I0207 04:51:29.449141 13685 merger.cc:246] Merger::RequestScore(score_name=TopicKernelScore)
+I0207 04:51:29.449244 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 872 bytes
+I0207 04:51:29.452149 13685 merger.cc:246] Merger::RequestScore(score_name=PerplexityScore)
+I0207 04:51:29.452253 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 63 bytes
+I0207 04:51:29.452483 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityPhiScore)
+I0207 04:51:29.452574 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.452797 13685 merger.cc:246] Merger::RequestScore(score_name=SparsityThetaScore)
+I0207 04:51:29.452841 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 37 bytes
+I0207 04:51:29.453039 13685 merger.cc:246] Merger::RequestScore(score_name=TopTokensScore)
+I0207 04:51:29.453186 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 749 bytes
+I0207 04:51:29.455920 13685 phi_matrix_operations.cc:96] RetrieveExternalTopicModel() with 3 topics, 75 tokens
+I0207 04:51:29.456078 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 3160 bytes
+I0207 04:51:29.456421 13692 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.456439 13690 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.459326 13685 phi_matrix_operations.cc:96] RetrieveExternalTopicModel() with 3 topics, 75 tokens
+I0207 04:51:29.459481 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 1810 bytes
+I0207 04:51:29.460422 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=2) copied 900 bytes
+I0207 04:51:29.467926 13691 processor.cc:974] No data in processing queue, waiting...
+I0207 04:51:29.472563 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 157 bytes
+I0207 04:51:29.473036 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=0) copied 61 bytes
+I0207 04:51:29.473196 13685 c_interface.cc:158] ArtmCopyRequestResultEx(request_type=1) copied 72 bytes
+I0207 04:51:29.491801 13685 master_component.cc:127] Exporting model pwt to /home/andrew/develop_for_diplom/result/plsa_model
+I0207 04:51:29.491925 13685 phi_matrix_operations.cc:96] RetrieveExternalTopicModel() with 3 topics, 75 tokens
+I0207 04:51:29.492095 13685 master_component.cc:161] Export completed, token_size = 75, topic_size = 3
+I0207 04:51:29.517711 13689 processor.cc:966] Processor thread stopped
+I0207 04:51:29.517848 13689 processor.cc:967] Total number of processed batches: 6
+I0207 04:51:29.518998 13690 processor.cc:966] Processor thread stopped
+I0207 04:51:29.519068 13690 processor.cc:967] Total number of processed batches: 3
+I0207 04:51:29.519224 13691 processor.cc:966] Processor thread stopped
+I0207 04:51:29.519273 13691 processor.cc:967] Total number of processed batches: 5
+I0207 04:51:29.520246 13692 processor.cc:966] Processor thread stopped
+I0207 04:51:29.520300 13692 processor.cc:967] Total number of processed batches: 6
+I0207 04:51:29.521584 13688 merger.cc:127] Merger thread stopped
